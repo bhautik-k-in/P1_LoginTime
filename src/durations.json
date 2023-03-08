@@ -1,0 +1,36 @@
+{
+  "durations": [
+    {
+      "name": "Decade",
+      "value": 315360000
+    },
+    {
+      "name": "Year",
+      "value": 31536000
+    },
+    {
+      "name": "Month",
+      "value": 2592000
+    },
+    {
+      "name": "Week",
+      "value": 604800
+    },
+    {
+      "name": "Day",
+      "value": 86400
+    },
+    {
+      "name": "Hour",
+      "value": 3600
+    },
+    {
+      "name": "Minute",
+      "value": 60
+    },
+    {
+      "name": "Second",
+      "value": 1
+    }
+  ]
+}
