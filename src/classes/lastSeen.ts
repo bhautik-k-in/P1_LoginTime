@@ -2,13 +2,13 @@ import moment from "moment";
 import { durations } from "../durations.json";
 
 export class LastSeen {
-  constructor(private readonly time: Date) {
-    this.time = new Date();
+  constructor(private readonly lastSeen: Date) {
+    this.lastSeen = lastSeen;
   }
-  //   const durations =
-  static getLastSeenTimeString(lastSeen: Date): string {
+
+  getLastSeenTimeString(): string {
     const now = moment();
-    const durationInSeconds = now.diff(moment(lastSeen), "seconds");
+    const durationInSeconds = now.diff(moment(this.lastSeen), "seconds");
 
     const duration = durations.find((d) => durationInSeconds >= d.value);
 
